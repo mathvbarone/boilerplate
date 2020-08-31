@@ -1,0 +1,8 @@
+root = true
+
+[*]
+indent_style = spaces
+indent_size = 2
+end_of_line = lf
+charteset = utf-8
+trim_trailing_white_space = trueinsert_final_newline = true
