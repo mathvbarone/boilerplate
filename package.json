@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint src --max-warnings=0",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "yarn test --watch"
   },
   "dependencies": {
     "next": "9.5.2",
@@ -35,7 +36,7 @@
     "typescript": "^3.9.7"
   },
   "lint-staged": {
-    "src/**/*": "yarn lint --fix"
+    "src/**/*": ["yarn lint --fix", "yarn test --bail"]
   },
   "husky": {
     "hooks": {
